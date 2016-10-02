@@ -6,6 +6,9 @@ _this is a front-end SPA which consume BE CRUD functionalities and display addre
 
 All Addresses could be geocoded inside Austeria region. 
 
+## Application Links
+
+- http://addressbookweb.azurewebsites.net/index.html
 
 ## Features
 
