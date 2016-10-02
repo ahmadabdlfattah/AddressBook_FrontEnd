@@ -18,6 +18,7 @@ All Addresses could be geocoded inside Austeria region.
 - Edit Address data.
 - Add new addrress.
 - Delete ana addresss.
+- Responsive application, runs on (Tablets, desktop)
 
 ## Technologies
 
