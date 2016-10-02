@@ -1,0 +1,33 @@
+﻿.removeBtn {
+    background: url(images/remove.png) !important;
+    background-repeat: no-repeat !important;
+    background-color: transparent;
+    border: none !important;
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    box-shadow: none;
+}
+
+.zoomBtn {
+    background: url(images/zoom-in.png) !important;
+    background-repeat: no-repeat !important;
+    background-color: transparent;
+    border: none !important;
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    box-shadow: none;
+}
+
+.k-grid-content { height: 62% !important }
+
+#unitsGridContainer {
+    height: 98%;
+    position: relative;
+}
+
+#gridArea {
+    height: 30%;
+    position: relative;
+}

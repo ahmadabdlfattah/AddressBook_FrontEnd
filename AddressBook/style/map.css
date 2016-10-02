@@ -1,0 +1,29 @@
+﻿#map { height: 70%; }
+
+.esriPopup .actionsPane .zoomTo { display: none; }
+
+.esriPopup .titlePane { background-color: #3f51b5 !important; }
+
+#homeButton {
+    position: absolute;
+    top: 91px;
+    right: 25px;
+    z-index: 50;
+    width: 27px;
+}
+
+#search {
+    display: block;
+    position: absolute;
+    z-index: 150;
+    right: 67px;
+    top: 20px;
+}
+
+.editBtn {
+    margin-top: 8px;
+    margin-left: 72px;
+    margin-right: 5px;
+}
+
+.removeBtn-info { margin-top: 8px; }

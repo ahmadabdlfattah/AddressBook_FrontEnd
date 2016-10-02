@@ -1,0 +1,15 @@
+﻿body {
+    margin: 0px;
+    height: 100%;
+}
+
+#mainContainer {
+    border: 5px black solid;
+    width: 99%;
+    height: inherit;
+}
+
+
+html {
+    height: 100%;
+}

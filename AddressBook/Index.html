@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no">
+    <title>Address Book</title>
+    <link rel="stylesheet" href="https://js.arcgis.com/3.18/dijit/themes/claro/claro.css">
+    <link rel="stylesheet" href="https://js.arcgis.com/3.18/esri/css/esri.css">
+    <link rel="stylesheet" href="style/style.css"/>
+
+
+    <script type="text/javascript" src="libs/jquery.min.js"></script>
+    <script type="text/javascript" src="libs/kendo.all.min.js"></script>
+    <script type="text/javascript">
+
+        dojoConfig = {
+            parseOnLoad: false,
+            async: true,
+            tlmSiblingOfDojo: false,
+            has: {
+                'extend-esri': 1
+            }
+        };
+        dojoConfig.baseUrl = window.path;
+        dojoConfig.packages = [{
+            name: "dojo",
+            location: "https://js.arcgis.com/3.18/dojo"
+        }, {
+            name: "dijit",
+            location: "https://js.arcgis.com/3.18/dijit"
+        }, {
+            name: "dojox",
+            location: "https://js.arcgis.com/3.18/dojox"
+        }, {
+            name: "put-selector",
+            location: "https://js.arcgis.com/3.18/put-selector"
+        }, {
+            name: "xstyle",
+            location: "https://js.arcgis.com/3.18/xstyle"
+        }, {
+            name: "dgrid",
+            location: "https://js.arcgis.com/3.18/dgrid"
+        }, {
+            name: "esri",
+            location: "https://js.arcgis.com/3.18/esri"
+        }, {
+            name: "framework",
+            location: "framework"
+        }];
+    </script>
+    <script src="https://js.arcgis.com/3.18"></script>
+
+    <script src="main.js"></script>
+
+</head>
+<body class="claro">
+    <div style="width:100%;height:100%;">
+
+        <div id="homeButton"></div>
+        <div id="search"></div>
+        <div id="map" ></div>
+        <div id="addressFormContainer" style="display: none">
+            <button id="close" class="closeBtn"></button>
+            <form id="addressForm">
+                <ul id="fieldlist">
+                    <li>
+                        <label for="name" class="required">Name</label>
+                        <input type="text" id="name" name="name" class="k-textbox formInput" placeholder="name" required style="width: 220px;"/>
+                    </li>
+                    <li>
+                        <label for="email" class="required">Email</label>
+                        <input type="email" id="email" name="email" class="k-textbox formInput" placeholder="e.g. myname@example.net" required data-email-msg="Email format is not valid" style="width: 220px;"/>
+                    </li>
+                    <li>
+                        <label for="address">Address</label>
+                        <input type="text" id="address" name="address" class="k-textbox formInput" readonly style="width: 220px;"/>
+                    </li>
+                    <li>
+                        <label for="jobPosition">Job Position</label>
+                        <input type="text" id="jobPosition" name="jobPosition" class="k-textbox formInput" placeholder="Job Position"  style="width: 220px;"/>
+                    </li>
+                    <li>
+                        <label for="tel">Phone Number</label>
+                        <input type="tel" id="tel" name="phoneNumber" class="k-textbox formInput" pattern="\d{10}" placeholder="Enter a ten digit number"
+                               validationMessage="Enter at least ten digits" style="width: 220px;"/>
+                    </li>
+                    <li>
+                        <label for="institution">Institution</label>
+                        <input type="text" id="institution" name="institution" class="k-textbox formInput" placeholder="Institution" validationMessage="Enter {0}" style="width: 220px;"/>
+                    </li>
+
+                </ul>
+                <div class="confirm">
+                    <button class="k-button k-primary" id="submit" type="submit">Save</button>
+                    <button class="k-button k-primary" id="cancel" type="button">Cancel</button>
+                </div>
+            </form>
+        </div>
+        <div id="gridArea" >
+            <div id="unitsGridContainer"></div>
+        </div>
+        <div id="loading"></div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+﻿{
+  "map": {
+    "divId": "map",
+    "options": {
+      "basemap": "streets",
+      "sliderPosition": "top-right"
+    },
+    "extent": {
+      "xmax": 1872351.1057441136,
+      "xmin": 1769161.1175592648,
+      "ymax": 6154185.886727919,
+      "ymin": 6126668.556545292
+    }
+  },
+
+  "arcgisServices": {
+    "geometryServiceUrl": "https://utility.arcgisonline.com/ArcGIS/rest/services/Geometry/GeometryServer",
+    "geocodingServiceUrl": "http://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer"
+  },
+
+  "restServiceDomainURL": {
+    "protocol": "http",
+    "host": "addressbook8910.azurewebsites.net",
+    "port": ""
+  },
+
+  "restServices": {
+    "getAllAddresses": "api/Addresses",
+    "getAddress": "api/Addresses/{id}",
+    "putAddress": "api/Addresses/{id}",
+    "postAddress": "api/Addresses",
+    "deleteAddress": "api/Addresses/{id}"
+  }
+}

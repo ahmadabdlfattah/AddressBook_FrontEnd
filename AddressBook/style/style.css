@@ -1,0 +1,7 @@
+﻿
+@import url('kendo.common.min.css');
+@import url('kendo.material.min.css');
+@import url(CommonStyle.css);
+@import url(grid.css);
+@import url(form.css);
+@import url(map.css);
